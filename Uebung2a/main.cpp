@@ -1,6 +1,15 @@
 #include <iostream>
 using namespace std;
 
+void geradeZahlen(int number);
+int summeGeradeZahlen(int number);
+void benutzerAbfrage();
+
+int main() {
+    benutzerAbfrage(); 
+    return 0;
+}
+
 void geradeZahlen(int number) {
     for (int i = 1; i <= number; i++) {
         if (i % 2 == 0) {
@@ -45,10 +54,5 @@ void benutzerAbfrage() {
             cout << "Falsche Eingabe" << endl;
         }
     }
-    
-}
 
-int main() {
-    benutzerAbfrage(); 
-    return 0;
 }
